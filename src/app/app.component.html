@@ -1,0 +1,42 @@
+<!-- <hello name="{{ name }}"></hello> -->
+<h1 class="red">📄 TYPE OF FORMS</h1>
+<h1>✔️Template driven form</h1>
+<form #zalakForm="ngForm" (ngSubmit)="addlist(zalakForm.value)">
+  <label> First name : </label>
+  <input
+    type="text"
+    ngModel
+    name="fName"
+    #fName="ngModel"
+    placeholder="first name"
+    required
+  /><br /><br />
+  <label> Last name : </label>
+  <input
+    type="text"
+    ngModel
+    name="lName"
+    #lName="ngModel"
+    placeholder="last name"
+  /><br /><br />
+  <label> City : </label>
+  <input
+    type="text"
+    ngModel
+    name="city"
+    #city="ngModel"
+    placeholder="city"
+  /><br /><br />
+  <label> Gmail : </label>
+  <input
+    type="gmail"
+    ngModel
+    name="gmail"
+    #gmail="ngModel"
+    placeholder=" xyz@gmail.com"
+  /><br /><br />
+  <button type="submit" class="btn">Submit</button>
+</form>
+
+<br /><br />
+<app-reactive></app-reactive>

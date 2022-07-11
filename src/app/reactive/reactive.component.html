@@ -1,0 +1,25 @@
+<h1> ✔️Reactive form</h1>
+
+
+<form [formGroup]="zalakform" (ngSubmit)="submitForm(zalakform)">
+  <label for="fName"> first name : </label>
+  <input type="text" id="fName" formControlName="fName" placeholder="first name"/><br /><br />
+  <label for="lName"> last name : </label>
+  <input type="text" id="lName" formControlName="lName" placeholder="last name"/><br /><br />
+  <label for="city"> City : </label>
+  <input type="text" id="city" formControlName="city"  placeholder="city"/><br /><br />
+  <label for="gmail"> Gmail : </label>
+  <input type="Gmail" id="gmail" formControlName="gmail" placeholder="xyz@gmail.com" /><br /><br />
+  <button type="submit" class="btn" [disabled]="zalakform.invalid">Submit</button>
+</form> 
+
+
+
+
+
+
+
+
+
+
+
